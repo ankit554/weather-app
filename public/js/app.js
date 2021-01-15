@@ -12,7 +12,7 @@ const fetchWeather = (address) => {
                 message1.textContent = data.error;
             } else {
                 message1.textContent = data.location;
-                message2.textContent = `${data.forecast.Weather} today. It is currently ${data.forecast.Temperature} degrees out.`;
+                message2.textContent = `${data.forecast.Weather} today. It is currently ${data.forecast.Temperature} degrees out. The humidity is ${data.forecast.humidity}% .`;
             } 
         })
     })

@@ -11,7 +11,7 @@ const forecast = (address, callback) => {
             callback(undefined, {
                 Weather : body.current.weather_descriptions[0],
                 Temperature : body.current.temperature,
-                
+                humidity : body.current.humidity
             });
         }
     })

@@ -32,14 +32,14 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title:'About Page',
+        title:'About Us',
         name :'Ankit'
     });
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title:'Help Page',
+        title:'Help',
         name :'Ankit'
     });
 })
@@ -67,17 +67,6 @@ app.get('/weather', (req, res) => {
                 forecast: forecastData
             })
         })
-    })
-})
-
-app.get('/products', (req, res) => {
-    if(!req.query.search) {
-        return res.send({
-            error : 'You must provide a search item'
-        })
-    }
-    res.send({
-        products:[]
     })
 })
 
