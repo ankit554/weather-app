@@ -25,7 +25,7 @@ app.use(express.static(publicDirPath));
 
 app.get('', (req, res) => {
     res.render('index', {
-        title:'Weather App',
+        title:'Weather Forecast',
         name :'Ankit'
     });
 })
